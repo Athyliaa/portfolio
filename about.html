@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About & Contact | Nur Alia Safia</title>
+  <meta name="description" content="About Nur Alia Safia: IT (Multimedia Technology) undergraduate at Universiti Malaysia Sabah. Education, skills and contact details.">
+  <meta name="theme-color" content="#F5F1E8">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About & Contact | Nur Alia Safia">
+  <meta property="og:description" content="About Nur Alia Safia: IT (Multimedia Technology) undergraduate at Universiti Malaysia Sabah. Education, skills and contact details.">
+  <!-- Optional: add a preview image for link shares, e.g. <meta property="og:image" content="https://YOUR-SITE/images/og-preview.jpg"> -->
+
+  <!-- Hides animated elements until GSAP takes over (skipped for reduced motion; auto-removed if GSAP fails) -->
+  <script>
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.documentElement.classList.add("motion");
+      setTimeout(function () { document.documentElement.classList.remove("motion"); }, 2500);
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/config.js" defer></script>
+  <script src="js/projects.js" defer></script>
+  <script src="js/site.js" defer></script>
+  <script src="js/pages.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="js/motion.js" defer></script>
+</head>
+<body data-page="about">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header" class="site-header-slot"></div>
+
+  <!-- Edit the text on this page directly here. -->
+  <main id="main">
+    <noscript><p class="noscript">This site uses JavaScript to show projects. Please enable it to see my work.</p></noscript>
+
+    <!-- ============ INTRO ============ -->
+    <section class="page-head">
+      <div class="container about-intro">
+        <div class="about-intro__copy">
+          <span class="page-head__icon page-head__icon--coral"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.5" r="4"/><path d="M4 20.5c1.5-4 4.5-5.5 8-5.5s6.5 1.5 8 5.5"/></svg></span>
+          <h1 class="page-head__title">About me</h1>
+          <div class="about-bio">
+            <p class="about-bio__lead">
+              I'm Nur Alia Safia, an IT (Multimedia Technology) undergraduate at Universiti Malaysia Sabah (UMS).
+            </p>
+            <p>
+              My studies cover programming, web development, database management and 3D modelling.
+              My final year project, <a href="games.html#mysteries-of-bidasari">Mysteries of Bidasari</a>,
+              is a cel-shaded 3D game based on Sabah's Kadazan-Dusun folklore. I lead the project's story and
+              level design, UI design, 2D and 3D asset creation, and development coordination, while also
+              contributing to gameplay programming (C#, Unity) and quality assurance through game testing.
+            </p>
+            <p>
+              Beyond my final year project, I've worked on various academic projects involving programming, augmented
+              reality (AR), 3D animation, web development, UI design and IoT. I've also had the opportunity
+              to present two of these projects to visitors at university exhibitions.
+            </p>
+            <p>
+              I'm looking for an internship where I can apply what I've learned, build practical skills and
+              gain exposure to a professional IT environment.
+            </p>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn--coral btn--lg" href="#contact">Contact me</a>
+          </div>
+        </div>
+
+        <aside class="facts card" aria-label="Quick facts">
+          <p class="facts__title">Quick facts</p>
+          <dl class="facts__list">
+            <div><dt>Studying</dt><dd>Bachelor of IT (Hons), Multimedia Technology</dd></div>
+            <div><dt>University</dt><dd>Universiti Malaysia Sabah</dd></div>
+            <div><dt>CGPA</dt><dd>3.32 &middot; Dean's List, Semester&nbsp;6</dd></div>
+            <div><dt>Based in</dt><dd>Kajang, Selangor</dd></div>
+            <div><dt>Languages</dt><dd>English (fluent), Bahasa Malaysia (fluent)</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section section--after-intro" aria-labelledby="edu-heading">
+      <div class="container">
+        <div class="section__head">
+          <p class="kicker">Education</p>
+          <h2 class="section__title" id="edu-heading">Where I study</h2>
+        </div>
+        <ol class="timeline">
+          <li class="timeline__item card">
+            <p class="timeline__date">Oct 2023 &ndash; Present</p>
+            <h3 class="timeline__title">Bachelor of Information Technology with Honours (Multimedia Technology)</h3>
+            <p class="timeline__place">Universiti Malaysia Sabah</p>
+            <ul class="chips">
+              <li class="chip chip--teal">CGPA 3.32</li>
+              <li class="chip chip--coral">Dean's List, Semester 6</li>
+            </ul>
+          </li>
+          <li class="timeline__item card">
+            <p class="timeline__date">Jul 2021 &ndash; May 2023</p>
+            <h3 class="timeline__title">Matriculation Programme</h3>
+            <p class="timeline__place">Kolej Matrikulasi Melaka</p>
+            <ul class="chips">
+              <li class="chip chip--teal">CGPA 3.25</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section--flush-top" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section__head">
+          <p class="kicker">Skills</p>
+          <h2 class="section__title" id="skills-heading">My toolkit</h2>
+        </div>
+        <div class="skill-grid">
+          <div class="skill card skill--coral">
+            <h3 class="skill__title">Programming</h3>
+            <ul class="chips">
+              <li class="chip">Java</li><li class="chip">C++</li><li class="chip">HTML</li><li class="chip">CSS</li>
+              <li class="chip">JavaScript <span class="chip__lvl">basic</span></li>
+              <li class="chip">C# <span class="chip__lvl">basic, Unity</span></li>
+              <li class="chip">SQL (MySQL)</li>
+              <li class="chip">Python <span class="chip__lvl">basic</span></li>
+            </ul>
+          </div>
+          <div class="skill card skill--teal">
+            <h3 class="skill__title">3D, Animation &amp; Game Dev</h3>
+            <ul class="chips">
+              <li class="chip">Blender</li><li class="chip">Unity</li><li class="chip">OpenGL (GLUT)</li>
+            </ul>
+          </div>
+          <div class="skill card">
+            <h3 class="skill__title">Web Development</h3>
+            <ul class="chips">
+              <li class="chip">Visual Studio Code</li><li class="chip">Adobe Dreamweaver</li><li class="chip">XAMPP</li>
+            </ul>
+          </div>
+          <div class="skill card">
+            <h3 class="skill__title">Design &amp; Digital Media</h3>
+            <ul class="chips">
+              <li class="chip">Adobe Photoshop</li><li class="chip">Canva</li><li class="chip">CapCut</li>
+            </ul>
+          </div>
+          <div class="skill card">
+            <h3 class="skill__title">Data &amp; Productivity Tools</h3>
+            <ul class="chips">
+              <li class="chip">Microsoft Excel</li>
+              <li class="chip">Microsoft PowerPoint</li>
+              <li class="chip">Microsoft Power BI <span class="chip__lvl">basic</span></li>
+              <li class="chip">Microsoft Word</li>
+              <li class="chip">Microsoft Project</li>
+            </ul>
+          </div>
+          <div class="skill card">
+            <h3 class="skill__title">Other Tools</h3>
+            <ul class="chips">
+              <li class="chip">Arduino IDE <span class="chip__lvl">basic</span></li>
+            </ul>
+          </div>
+          <div class="skill card skill--wide">
+            <h3 class="skill__title">Soft Skills</h3>
+            <ul class="chips">
+              <li class="chip">Public speaking</li><li class="chip">Teaching &amp; facilitating</li>
+              <li class="chip">Teamwork</li><li class="chip">Event coordination</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OTHER PROJECTS ============ -->
+    <section class="section section--flush-top" aria-labelledby="other-heading">
+      <div class="container">
+        <div class="section__head">
+          <p class="kicker">Other projects</p>
+          <h2 class="section__title" id="other-heading">More things I've built</h2>
+        </div>
+        <ul class="side-quests">
+          <li class="card">
+            <p class="xp__year">2026</p>
+            <h3 class="xp__role">Smart Personal Room Prototype (IoT)</h3>
+            <p class="xp__desc">Cardboard scale model with a smart fan and smart lighting controlled by Arduino. Presented to visitors at a university exhibition booth.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact card">
+          <div class="contact__copy">
+            <p class="kicker kicker--light">Contact</p>
+            <h2 class="contact__title" id="contact-heading">Let's work together.</h2>
+            <p>I'm currently looking for internship opportunities. Feel free to reach out via email, it's the best way to get in touch with me.</p>
+          </div>
+
+          <div class="contact__grid">
+            <div class="contact__item contact__item--email">
+              <p class="label">Email</p>
+              <a class="contact__value" data-email-link data-email-text>aliasafia03@gmail.com</a>
+              <div class="btn-row">
+                <a class="btn btn--coral" data-email-link><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4.5" width="20" height="15" rx="2.5"/><path d="M2.5 6.5l9.5 7 9.5-7"/></svg> Send email</a>
+                <button class="btn" type="button" data-copy-email>Copy address</button>
+              </div>
+            </div>
+            <div class="contact__item">
+              <p class="label">LinkedIn</p>
+              <a class="btn btn--teal" data-linkedin-link><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="3.5"/><path d="M7.5 10.5v6M7.5 7.5v.01M11.5 16.5v-6M11.5 13.5a2.75 2.75 0 0 1 5.5 0v3"/></svg> View profile</a>
+            </div>
+            <div class="contact__item">
+              <p class="label">Location</p>
+              <p class="contact__plain">Kajang, Selangor, Malaysia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+</body>
+</html>

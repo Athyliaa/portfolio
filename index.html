@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nur Alia Safia | Games, 3D Modelling & Web Portfolio</title>
+  <meta name="description" content="Portfolio of Nur Alia Safia, an IT (Multimedia Technology) student at Universiti Malaysia Sabah. Games, 3D modelling, videos and websites.">
+  <meta name="theme-color" content="#F5F1E8">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nur Alia Safia | Games, 3D Modelling & Web Portfolio">
+  <meta property="og:description" content="Portfolio of Nur Alia Safia, an IT (Multimedia Technology) student at Universiti Malaysia Sabah. Games, 3D modelling, videos and websites.">
+  <!-- Optional: add a preview image for link shares, e.g. <meta property="og:image" content="https://YOUR-SITE/images/og-preview.jpg"> -->
+
+  <!-- Hides animated elements until GSAP takes over (skipped for reduced motion; auto-removed if GSAP fails) -->
+  <script>
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.documentElement.classList.add("motion");
+      setTimeout(function () { document.documentElement.classList.remove("motion"); }, 2500);
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/config.js" defer></script>
+  <script src="js/projects.js" defer></script>
+  <script src="js/site.js" defer></script>
+  <script src="js/pages.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="js/motion.js" defer></script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header" class="site-header-slot"></div>
+
+  <main id="main">
+    <noscript><p class="noscript">This site uses JavaScript to show projects. Please enable it to see my work.</p></noscript>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Looking for an internship</p>
+          <h1 class="hero__title">
+            Hi, I'm <span class="sticker">Alia</span>.
+            <span class="hero__tagline">An IT student with a passion for building digital&nbsp;experiences.</span>
+          </h1>
+          <p class="hero__lead">
+            IT (Multimedia Technology) undergraduate at Universiti Malaysia Sabah.
+            I work across web development, game development and digital media, combining
+            technical skills with creative problem-solving to build interactive experiences.
+          </p>
+          <div class="btn-row">
+            <a class="btn btn--coral btn--lg" href="#work">See my work</a>
+            <a class="btn btn--lg" data-email-link><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4.5" width="20" height="15" rx="2.5"/><path d="M2.5 6.5l9.5 7 9.5-7"/></svg> Contact me</a>
+          </div>
+        </div>
+
+        <!-- Profile card: quick facts for recruiters -->
+        <div class="player-wrap">
+        <aside class="player card" aria-label="Quick profile">
+          <div class="player__top">
+            <span class="pill pill--ink">Profile</span>
+            <span class="pill pill--teal">Open to internships</span>
+          </div>
+          <div class="media media--teal player__photo">
+            <div class="media__ph" aria-hidden="true">
+              <span class="media__ph-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8.5" r="4"/><path d="M4 20.5c1.5-4 4.5-5.5 8-5.5s6.5 1.5 8 5.5"/></svg></span>
+              <span class="media__ph-label">Add your photo</span>
+            </div>
+            <!-- Photo in images/profile/alia.jpg -->
+            <img src="images/profile/alia.jpg" alt="Portrait of Alia" width="480" height="480">
+          </div>
+          <h2 class="player__name">Nur Alia Safia</h2>
+          <dl class="player__stats">
+            <div><dt>Studying</dt><dd>IT (Multimedia Technology)</dd></div>
+            <div><dt>University</dt><dd>Universiti Malaysia Sabah</dd></div>
+            <div><dt>Location</dt><dd>Kajang, Selangor</dd></div>
+          </dl>
+          <p class="label">Top tools</p>
+          <ul class="chips">
+            <li class="chip">Blender</li>
+            <li class="chip">Unity</li>
+            <li class="chip">C++</li>
+            <li class="chip">Java</li>
+            <li class="chip">HTML/CSS/JS</li>
+            <li class="chip">Photoshop</li>
+          </ul>
+          <p class="player__badge">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 16.8l-5.4 2.9 1.1-6.1-4.5-4.2 6.1-.8z" fill="currentColor"/></svg>
+            Dean's List, Semester 6
+          </p>
+        </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED ============ -->
+    <section class="section" id="work" aria-labelledby="featured-heading">
+      <div class="container">
+        <div class="section__head">
+          <p class="kicker">Featured project</p>
+          <h2 class="section__title" id="featured-heading">What I'm building now</h2>
+        </div>
+        <div id="featured"></div>
+      </div>
+    </section>
+
+    <!-- ============ CATEGORIES ============ -->
+    <section class="section section--tight" aria-labelledby="cats-heading">
+      <div class="container">
+        <div class="section__head">
+          <p class="kicker">Portfolio</p>
+          <h2 class="section__title" id="cats-heading">Browse my work</h2>
+        </div>
+        <div class="tiles" id="category-tiles"></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT CTA ============ -->
+    <section class="section" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="cta card">
+          <div class="cta__copy">
+            <h2 class="cta__title" id="cta-heading">Have an internship opportunity? Let's connect.</h2>
+            <p>The fastest way to reach me is email: <a class="cta__email" data-email-link data-email-text>aliasafia03@gmail.com</a></p>
+          </div>
+          <div class="btn-row cta__actions">
+            <a class="btn btn--ink btn--lg" data-email-link><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4.5" width="20" height="15" rx="2.5"/><path d="M2.5 6.5l9.5 7 9.5-7"/></svg> Email me</a>
+            <a class="btn btn--lg" data-linkedin-link><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="3.5"/><path d="M7.5 10.5v6M7.5 7.5v.01M11.5 16.5v-6M11.5 13.5a2.75 2.75 0 0 1 5.5 0v3"/></svg> LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Websites | Nur Alia Safia</title>
+  <meta name="description" content="Websites built by Nur Alia Safia, including Lights Out, a Formula 1 fan site.">
+  <meta name="theme-color" content="#F5F1E8">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Websites | Nur Alia Safia">
+  <meta property="og:description" content="Websites built by Nur Alia Safia, including Lights Out, a Formula 1 fan site.">
+  <!-- Optional: add a preview image for link shares, e.g. <meta property="og:image" content="https://YOUR-SITE/images/og-preview.jpg"> -->
+
+  <!-- Hides animated elements until GSAP takes over (skipped for reduced motion; auto-removed if GSAP fails) -->
+  <script>
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      document.documentElement.classList.add("motion");
+      setTimeout(function () { document.documentElement.classList.remove("motion"); }, 2500);
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/config.js" defer></script>
+  <script src="js/projects.js" defer></script>
+  <script src="js/site.js" defer></script>
+  <script src="js/pages.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="js/motion.js" defer></script>
+</head>
+<body data-page="websites">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header" class="site-header-slot"></div>
+
+  <!-- This page is filled in from js/projects.js (category: "websites") -->
+  <main id="main">
+    <noscript><p class="noscript">This site uses JavaScript to show projects. Please enable it to see my work.</p></noscript>
+    <div id="category-page"></div>
+  </main>
+
+  <div id="site-footer"></div>
+</body>
+</html>
